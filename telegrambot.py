@@ -113,8 +113,8 @@ def check_size(path,userid):
 	b=os.path.getsize(path)
 	print('file size is',b)
 	obj=virus(str(path))
-	if b>32*1024*1024:
-		send_msg(userid,'Sorry This file is larger than 32Mb')
+	if b>1024*1024*1024:
+		send_msg(userid,'Sorry This file is larger than 1024Mb')
 		# obj.large_files()
 		return
 	else:
