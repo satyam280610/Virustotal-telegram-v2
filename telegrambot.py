@@ -78,7 +78,7 @@ def download_telegram_media(client, message):
 	if not message.from_user.id == me :
 		client.send_message(
 			chat_id=message.chat.id,
-			text = 'Please host your own bot at \nhttps://github.com/uaudith/Virustotal-telegram'
+			text = 'Please host your own bot at \nhttps://github.com/satyam280610/Virustotal-telegram-v2'
 		)
 		return
 	msg = client.send_message(
